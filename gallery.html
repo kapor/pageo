@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<!-- GALLERY -->
+---
+layout: default
+title: Pageo Galleries
+---
 
-<html lang="en">
-
-
-
-<head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
-<title>Pageo Gallery</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="css/styles.css"> 
-<link rel="stylesheet" type="text/css" href="css/topnav.css">
-<link rel="stylesheet" type="text/css" href="css/gallery.css">
-<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css">
-<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/lightbox.css"> 
 <style>
 
@@ -107,96 +93,11 @@
 
 <body>
 
+
 <!--------------- NAVIGATION –––––––––––––––––––––––-->
 
-<div id="topnav_menu" class="overlay_menu">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-		<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_close.svg"></span>	
-	</a>
-	<div class="overlay_content">
-		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
-			<a href="weddings.html#services" class="topnav_mobile_subnav" onclick="closeNav()">Our Services</a>
-			<a href="weddings.html#about" class="topnav_mobile_subnav" onclick="closeNav()">About Us</a>
-			<a href="weddings.html#test" class="topnav_mobile_subnav" onclick="closeNav()">Testimonials</a>
-		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
-		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
-			<a href="giftshop.html#lunch" class="topnav_mobile_subnav" onclick="closeNav()">Lunch Menu</a>
-			<a href="giftshop.html#photo" class="topnav_mobile_subnav" onclick="closeNav()">Photoshoots</a>
-			<a href="giftshop.html#products" class="topnav_mobile_subnav" onclick="closeNav()">Products</a>
-		<a href="gallery.html" class="overlay_link" onclick="closeNav()">Galleries</a>
-	</div>
-	<div class="button_overlay" style='background-color:#FEF2DA'>
-		<a href="#">Book a consultation</a>
-	</div>
-</div>
+{% include nav.html %}
 
-
-<div id="topnav_contact" class="overlay_contact">
-		<div class="nav_form">
-			<div class="nav_getintouch_closex">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeContact()">
-				<span style="cursor:pointer" onclick="openContact()"><img src="images/global/icon/24x24_close.svg"></span>	
-			</a>
-			</div>
-			<div class="nav_getintouch_top">
-				<h4>
-				<ol>
-					<li> Fill out the inquiry form and submit.</li>
-					<li> Receive pricing information and availability dates.</li>
-					<li> Book a tour of the venue for a free consultation.</li>
-				</ol>
-				</h4>
-			</div>
-			<div class="nav_getintouch_bottom">
-				<form action="/action_page.php">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="fname" name="firstname" placeholder="Full Name">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="lname" name="lastname" placeholder="Email Address">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="pnumber" name="phone" placeholder="Phone Number">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="etype" name="type" placeholder="Event Type (Wedding, Shower, etc.)">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="datesofinterest" name="dates" placeholder="Date(s) of Interest)">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="numberofguests" name="guests" placeholder="Approx. Number of Guests">
-					<!-- ><label for="fname">First Name</label> -->
-					<input type="text" id="daysofweek" name="days" placeholder="Preferred Day(s) of the Week">
-					<input type="submit" value="Submit">
-				</form>
-			</div>
-		</div>
-</div>
-
-<div class="topnav_fixed">
-	<div class="topnav">
-		<div class="topnav_left">
-			<a class="nav_pageo_logo" href="https://www.pageolavenderfarm.com">PAGEO LAVENDER FARM</a>
-			<div class="topnav_vertical_divider"></div>
-			<div class="nav_link_left">
-			<a href="weddings.html">Weddings & Events</a>
-			<a href="giftshop.html">Gift Shop & Services</a>
-			</div>
-			
-		</div>
-		<div id="menu">
-			<span style="cursor:pointer" onclick="openNav()" class="openNav"><img src="images/global/icon/24x24_ham.svg"></span>
-		</div>
-		<div class="topnav_right_button_group">
-			<div class="button_nav_right">
-			<span><a href="mailto:info@pageolavenderfarm.com">Contact</a></span>
-			<!--
-			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
-			-->
-				<div class="topnav_vertical_divider"></div>
-			</div>		
-		</div>	
-		<div class="topnav_right">
-			<a href="gallery.html">Galleries</a>
-		</div>
-	</div>
-</div>
 
 
 
@@ -623,56 +524,7 @@
 
 <!--------------- FOOTER –––––––––––––––––––––––-->
 
-<footer>
-	<div class="row">
-		<div class="info_1">
-			<div>
-			<p>Pageo Lavender Farm</p>
-			<p>11573 Golf Road</p>
-			<p>Turlock, Ca, 95380</p>
-			</div>
-		</div>
-		
-		<div class="info_2" style="overflow: visible;">
-			<div class="showup">
-				<img src="images/global/logo_dark.svg" width="150" height="150">
-			</div>
-		</div> 
-		<div class="info_3">
-			<div>
-			<p>Info@pageolavenderfarm.com</p>
-			<p>Phone:  209.632.5052</p>
-			<p>Fax:  209.634.1379</p>
-			</div>
-		</div> 
-
-	</div>
-</footer>
-
-<script src="js/lightbox-plus-jquery.js"></script>
-
-<!-- ++++++++++ DISABLE SCROLLBAR ++++++++++ -->
-
-
-
-<script>
-	$(".openNav").click(function(){
-	$('body').css("overflow", "hidden");
-});
-
-	$(".closebtn").click(function(){
-	$('body').css("overflow", "visible");
-});
-
-	$(".overlay_link").click(function(){
-	$('body').css("overflow", "visible");
-});
-
-	$(".topnav_mobile_subnav").click(function(){
-	$('body').css("overflow", "visible");
-});
-
-</script>
+{% include footer.html %}
 
 
 
