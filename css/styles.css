@@ -1342,7 +1342,7 @@ a:hover .button_giftshop {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
 	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block, #parallax #parallax_04_block {
 		padding: 40px 40px 40px 40px; 
@@ -1376,6 +1376,18 @@ a:hover .button_giftshop {
 
 
 
+}
+
+ /* This is needed to target iPads in landscape and portrait mode when using PARALLAX BG images  (other non-parallax BG images are fine...) .. parallax on iPhones works without this (it doesn't do parallax effect but it shows the same image as a still, and at the correct scale... , but not iPads .. with iPads, what happens without this code is an ugly extreme zoom in.. this is the only thing that seems to work ... no customisation needed for the individual sections.. just this code in the global CSS..*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03, #parallax #parallax_04 {
+		background-attachment:scroll !important;
+		background-size: cover;
+		height: 100%;
+		overflow: hidden;
+  
+	}
 }
 
 
