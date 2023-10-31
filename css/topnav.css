@@ -404,19 +404,17 @@ a.nav_pageo_logo  {
 	padding-top: 28px;
 }
 
-@media screen and (max-width: 1000px) {
 
 
-	.overlay_menu {
-		overflow-y: auto;
-	}
-	.overlay_content overlay_link {
-		font-size: 32px;
-		line-height: 40px;
-	}
-	
-	
+
+.overlay_menu {
+	overflow-y: auto;
 }
+.overlay_content overlay_link {
+	font-size: 32px;
+	line-height: 40px;
+}
+
 
 
 

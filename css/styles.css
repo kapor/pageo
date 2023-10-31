@@ -1382,10 +1382,10 @@ a:hover .button_giftshop {
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) { 
 	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03, #parallax #parallax_04 {
-		background-attachment:scroll !important;
+		background-attachment: scroll !important;
 		background-size: cover;
-		height: 100%;
 		overflow: hidden;
+
   
 	}
 }
