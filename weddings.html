@@ -628,14 +628,33 @@ Get in Touch
 
 <script src="js/javascript.js"></script>
 
+<!-- ++++++++++ ESCAPE KEY TO EXIT ++++++++++ -->
+
 <script>
+
 document.addEventListener('keyup',function(e){
     if (e.key === "Escape") { 
         // hide modal code
         closeModal()
     }
 });
+
+
 </script>
+
+<!-- ++++++++++ ARROW KEYS TO NAVIGATE ++++++++++ -->
+
+<script>
+
+
+window.addEventListener("keydown", (e) => {
+   if (e.key === "ArrowLeft"){
+      plus_slides(-1);
+   } else if (e.key === "ArrowRight"){
+      plus_slides(1);
+   }
+});
+
 
 </script>
 
